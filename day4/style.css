@@ -1,0 +1,82 @@
+
+:root {
+    --bg-color: #f4f7fb;
+    --text-color: #222222;
+    --card-color: #ffffff;
+    --border-color: #cccccc;
+    --button-color: #2563eb;
+    --button-text: #ffffff;
+}
+
+body.dark {
+    --bg-color: #121826;
+    --text-color: #f1f5f9;
+    --card-color: #1e293b;
+    --border-color: #475569;
+    --button-color: #60a5fa;
+    --button-text: #111827;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 40px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--card-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font: inherit;
+    resize: vertical;
+}
+
+button {
+    margin: 8px 8px 0 0;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--button-color);
+    color: var(--button-text);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
